@@ -1,26 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+.logo {
+  display: block;
+  width: 40%;
+}
+
 body {
     margin: 0 auto;
     max-width: 56em;
-    padding: 1em 0;  
+    font-family: 'Ubuntu', sans-serif;
   }
   
-  img {
-      width: 10%; 
-      height: auto;
-
-  }
-    
-
-   .navbar ul {
-	list-style: none;
-  	padding: 0px;  
-    text-align: left;
+h1, h2, h3 {
+  font-weight: 700;
+  padding: 0;
 }
+
+h4 {
+  text-transform: uppercase;
+}
+
+a:link, a:hover {
+  color: #000;
+}
+
+  img {
+      max-width: 100%; 
+      padding: 0px;
+      margin: 0;
+      display: block;
+  }
+
+    .navbar ul {
+    font-weight: 700;
+	  list-style: none;
+  	padding: 10px;  
+    text-align: center;
+    background-color: #f4b50f; 
+    }
 
     .navbar li {
     display: inline-block;
+    padding: 10px;
     }
   
+    .page-start {
+      border-bottom: 1px solid gray;
+    }
+  
+  .two-grid {
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    grid-template-columns: 
+      repeat(auto-fill,minmax(350px, 1fr));
+    grid-gap: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .column img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .section-works {
+    padding-top: 30px;
+  }
+
+  .small-grid {
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    grid-template-columns: 
+      repeat(auto-fill,minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+
   .grid {
     /* Grid Fallback */
     display: flex;
@@ -28,10 +92,11 @@ body {
     
     /* Supports Grid */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 1em;
   }
+
   
   .module {
     /* Demo-Specific Styles */
@@ -39,17 +104,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
     
     /* Flex Fallback */
     margin-left: 5px;
     margin-right: 5px;
     flex: 1 1 300px;
   }
+
+
   
   /* If Grid is supported, remove the margin we set for the fallback */
   @supports (display: grid) {
     .module {
       margin: 0;
     }
+  }
+
+  @media all and (max-width: 700px) {
+    .row {
+      grid-column: 1 / 2;
+    }
+  }
+
+  .image, .kicker, .header, .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .image {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+  
+  .kicker {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .header {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .text {
+    grid-column: 2;
+    grid-row: 3;
   }

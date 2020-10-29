@@ -50,11 +50,7 @@ a:link, a:hover {
       border-bottom: 1px solid gray;
     }
 
-  .column {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
+  
 
   .column img {
     object-fit: cover;
@@ -65,23 +61,7 @@ a:link, a:hover {
     padding-top: 30px;
   }
 
-  .two-grid {
-    display: grid;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    grid-template-columns: 
-      repeat(auto-fill,minmax(350px, 1fr));
-      grid-gap: 30px;
-}
-
-  .small-grid {
-    display: grid;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    grid-template-columns: 
-      repeat(auto-fill,minmax(250px, 1fr));
-    grid-gap: 30px;
-  }
+  
 
   .grid {
     /* Grid Fallback */
@@ -94,6 +74,14 @@ a:link, a:hover {
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 1em;
   }
+
+  .two-grid {
+    display: grid; 
+    padding-bottom: 40px; 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+  }
+
 
   
   .module {
@@ -116,35 +104,4 @@ a:link, a:hover {
     .module {
       margin: 0;
     }
-  }
-
-  @media all and (max-width: 700px) {
-    .row {
-      grid-column: 1 / 2;
-    }
-  }
-
-  .image, .kicker, .header, .text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-  
-  .image {
-    grid-column: 1;
-    grid-row: 1/4;
-  }
-  
-  .kicker {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .header {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  
-  .text {
-    grid-column: 2;
-    grid-row: 3;
   }

@@ -32,6 +32,7 @@ a:link, a:hover, a:hover:after {
   }
 
     .navbar ul {
+    /*navigation*/
     font-weight: 700;
 	  list-style: none;
   	padding: 10px;  
@@ -45,21 +46,25 @@ a:link, a:hover, a:hover:after {
     }
   
     .page-start {
+      /* divider */
       border-bottom: 1px solid gray;
     }
 
   
 
   .column img {
+
     object-fit: cover;
     width: 100%;
   }
 
   .section-works {
+    /*need extra spacing for selected works */
     padding-top: 30px;
   }
 
   .textwrap {
+    /* for writing photos */
     float: right;
     margin-left: 20px;
     margin-top: 0px;
@@ -109,3 +114,8 @@ a:link, a:hover, a:hover:after {
       margin: 0;
     }
   }
+
+  @media all and (max-width: 700px) {
+    div {
+      grid-column: 1;
+    }

@@ -24,6 +24,10 @@ a:link, a:hover, a:hover:after {
   color: #000;
 }
 
+a {
+font-weight: 700;
+}
+
   img {
       max-width: 100%; 
       padding-top: 20px;

@@ -28,7 +28,8 @@ a:link, a:hover {
 
   img {
       max-width: 100%; 
-      padding: 0px;
+      padding-top: 20px;
+      grid-gap: 20px;
       margin: 0;
       display: block;
   }
@@ -77,16 +78,16 @@ a:link, a:hover {
 
   .two-grid {
     display: grid; 
-    padding-bottom: 40px; 
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 30px;
+    padding-bottom: 30px; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+     
   }
 
 
   
   .module {
     /* Demo-Specific Styles */
-    background: #eaeaea;
     display: flex;
     align-items: center;
     justify-content: center;

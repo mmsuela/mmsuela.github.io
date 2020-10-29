@@ -18,11 +18,8 @@ h1, h2, h3 {
   padding: 0;
 }
 
-h4 {
-  text-transform: uppercase;
-}
 
-a:link, a:hover {
+a:link, a:hover, a:hover:after {
   color: #000;
 }
 
@@ -62,7 +59,13 @@ a:link, a:hover {
     padding-top: 30px;
   }
 
-  
+  .textwrap {
+    float: right;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 600px;
+  }
 
   .grid {
     /* Grid Fallback */

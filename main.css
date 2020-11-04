@@ -110,6 +110,7 @@ font-weight: 700;
     flex: 1 1 300px;
   }
 
+<<<<<<< HEAD
   /*contact section*/
 .contact {
   overflow: hidden;
@@ -136,6 +137,8 @@ img.social-media {
 
 
 
+=======
+>>>>>>> parent of be1dda5... redid text
   /* If Grid is supported, remove the margin we set for the fallback */
   @supports (display: grid) {
     .module {

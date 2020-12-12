@@ -1,0 +1,77 @@
+canvas {
+    background: black;
+    width: 100%;
+    height: 100%; 
+    }
+
+
+    html {
+        box-sizing: border-box;
+      }
+
+    body {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 35em;
+        font-family: 'Arial', sans-serif;
+        background: #ddd;
+      }
+
+      main {
+        margin: 0 0;
+        display: grid;
+        justify-content: center;
+      }  
+      
+      .post {
+        background: #fff;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        overflow:hidden; 
+      }
+      
+      .name-avatar {
+        display:flex;
+        align-items:center;
+        margin-bottom:1em;
+        border-radius: 50%;
+      }
+      
+        .avatar {
+          width: 10%; 
+          height: 10%;
+      }
+
+      .details {
+        display:flex;
+        align-items:center;
+        display: block;
+        margin: 1em;
+      }
+
+      .details p { 
+        margin: 0; 
+        padding: 0;
+      }
+
+      
+
+      .engage ul{
+        list-style: none;
+        margin: 0 0;
+        padding: 0px;  
+        text-align: center;
+        border-top: .5px solid gray;
+      }
+      
+      .engage li {
+        display: inline-block;
+        padding: 20px 50px 10px 50px;
+        margin: 0 0;
+      }
+
+      .engage p {
+          text-align: right; 
+          margin: 1em;
+      }

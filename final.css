@@ -1,10 +1,13 @@
+/* where the JavaScript happens*/ 
 canvas {
     background: black;
     width: 100%;
     height: 100%; 
+    margin-left: auto;
+    margin-right: auto;
     }
 
-
+/*style elements needed to give the FB vibe*/
     html {
         box-sizing: border-box;
       }
@@ -15,6 +18,7 @@ canvas {
         max-width: 35em;
         font-family: 'Arial', sans-serif;
         background: #ddd;
+        display: flex;
       }
 
       main {
@@ -56,18 +60,17 @@ canvas {
       }
 
       
-
       .engage ul{
         list-style: none;
         margin: 0 0;
-        padding: 0px;  
+        padding: 20px;  
         text-align: center;
         border-top: .5px solid gray;
       }
       
       .engage li {
         display: inline-block;
-        padding: 20px 50px 10px 50px;
+        padding: 0px 35px 0px 20px;
         margin: 0 0;
       }
 

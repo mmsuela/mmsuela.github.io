@@ -20,13 +20,16 @@
         text.onClick = function(event) {
             this.fillColor = 'white';
         }
+        
 
         //from https://www.youtube.com/watch?v=rx5PLMij_80&t=989s, 
         "Creating A Starry Night Simulation with JavaScript and Paper.js by VideoLab"
         var stars = [];
-        var velocity = 5;
+        var velocity = 10;
 
-        for(var i= 0; i <= 10000; i++) {
+        //I know it's a big number, but it represents new COVID-19 cases in the past two weeks
+        //count was from Dec. 8, source: Covid Tracking Project
+        for(var i= 0; i <= 26265; i++) {
         var circle = new Path.Circle(new Point(view.size.width, view.size.height) * Point.random(), 1)
         stars.push(circle)
         circle.fillColor = "red"
